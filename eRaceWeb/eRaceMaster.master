@@ -1,0 +1,76 @@
+<%@ Master Language="VB" CodeFile="eRaceMaster.master.vb" Inherits="eRaceMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+    <link href="eRace.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="LinkNav">
+	<div id="LinkNav2"><!--this is the floating text box-->
+		<ul>
+			<li>Administration</li>
+		</ul>
+	</div>
+</div>
+<div id="title">
+	<div class="eRHeader" style="background-attachment: fixed; background-image: url(header.gif); background-repeat: no-repeat; background-color: #3399ff">
+    </div><!--this is the image-->
+</div>
+    <form id="form1" runat="server">
+    <div>
+    <table style="width: 1066px; height: 477px">
+    
+    <tr valign = "top" >
+    <td style =" width: 240px; height:400px;  color:black;">
+        <br />
+     <asp:Menu ID="Menu1" runat="server" Orientation="Vertical" Width="104px">
+            <Items>
+                <asp:MenuItem Text="Search" Value="Search">
+                    <asp:MenuItem NavigateUrl="~/ProductLook.aspx" Text="[ Look up products ]" Value="lookupProducts"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/CarLookup.aspx" Text="[ Look up cars ]" Value="LookupCars"></asp:MenuItem>
+                </asp:MenuItem>
+                   
+                   
+                <asp:MenuItem Text="Maintenance" Value="Maintenance">
+                    <asp:MenuItem NavigateUrl="~/AddProduct.aspx" Text="[ Add Products ]" Value="AddProducts"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/UpdateProduct.aspx" Text="[ Update Products ]" Value="UpdateProducts"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/AddCar.aspx" Text="[ Add Cars ]" Value="AddCar"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/UpdateCar.aspx" Text="[ Update Cars ]" Value="UpdateCar"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Member" Value="Member">
+                    <asp:MenuItem NavigateUrl="~/DefaultPage.aspx" Text="[ Member ]" Value="AddProducts"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Car" Value="Car">
+                    <asp:MenuItem NavigateUrl="~/DefaultPage.aspx" Text="[ Car ]" Value="AddProducts"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/DefaultPage.aspx" Text="[ Car Stats ]" Value="AddCar"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Product" Value="Product">
+                    <asp:MenuItem NavigateUrl="~/DefaultPage.aspx" Text="[ Sales ]" Value="AddProducts"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/DefaultPage.aspx" Text="[ Purchasing ]" Value="UpdateProducts"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/RegisterRaces.aspx" Text="[ Races ]" Value="Races"></asp:MenuItem>
+                </asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </td>
+    <td style="width: 602px"> <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </td>
+    </tr>
+    
+    </table>
+    
+    </div>
+    <div>
+        &nbsp;
+    
+       
+    </div>
+    </form>
+
+</body>
+</html>
+    
+

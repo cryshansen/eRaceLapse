@@ -1,0 +1,141 @@
+﻿/* CSS Document */
+body {
+	
+	margin:0px;
+	padding:0px;
+}
+
+/*  ---------------------------------   ERaceHeader   -----------------------------------*/
+#title {
+	width:100%;
+	height:120px;
+	color:#000000;
+	/*background-color:#C0ECFA;This is color behind images*/
+	margin:0px;
+	padding:0px;
+}
+.eRHeader {
+	float:left;
+	margin:15px 0px 0px 15px;/* first is top margin second is right 3rd is bottom 4th is left margin*/
+	height:98px;
+	width:100%;
+	background-image:url("header.gif");
+	
+	background-repeat: no-repeat; 
+	background-color: #3399ff;
+	
+}
+
+
+/*  ------------------------   Linking Horizontal Navigation   -------------------------*/
+#LinkNav{/*this is the full div that runs horizontally accross the screen */
+	position: absolute;
+	margin-top:110px;
+	width:100%;
+	margin-left: 75px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	top: 2px;
+}
+#LinkNav2 {
+	width:100%;/*this is the full horizontal length of screen*/
+	float:left;
+	margin: 0px;
+	padding:0px;
+}
+#LinkNav2 ul{
+	width:100%;
+	list-style:none;
+	margin:0px 0px;
+	padding:0px;
+	float:left;
+	border:solid 1px #000033;
+	background-color:#C0ECFA;
+}
+#LinkNav2 li{/*this is admin box*/
+	display: block;
+	background-color:#C0ECFA;
+	color:#00ADEF;
+	margin:0px;
+	font-size:.3 em;
+	width:100%;
+	
+}
+
+/*  -------------------------------   Side Bar    --------------------------------*/
+/*---SideBar --*/
+#main{
+	background-color:#fff;
+	color:#000000;
+	width:100%;
+	height:auto;
+	
+}
+
+.sides{
+	width:200px;
+	padding:0px;
+	float:left;
+	top:200px;
+	margin-left: 25px;
+
+}
+.sidNav{
+	width:250px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	padding:5px 0px;
+	top: 200px;
+	background-color:#D4Effc;
+}
+
+.SideTxt {
+	background:#FFFFFF;
+	color:#000099;
+	padding:15px;
+}
+
+
+
+/*  -----------------------------------   Content   ------------------------------------*/
+
+.text {
+	width:auto;
+	margin:0px 15px 0px 300px;
+	padding:0px 75px 0px 10px;
+	color:#000033;
+	background-color:#fffFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:.9em;
+}
+.text a{
+	/*font-weight:bold;*/
+	text-decoration:none;
+	color: #000099;
+}
+.text a:visited{
+	color:#000033;
+	background-color:#fff;
+}
+.text a:link{
+	color:#000099;
+	background-color:#fff;
+}
+.text a:hover{
+	color: #FFCC33;
+	background-color:#fff;
+}
+.text p{
+	padding-left:0px;
+	padding-right:10px;
+}
+
+.CTitle {
+	font-size:1.2em;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	padding-top: 0px;
+}
+.CTitle strong{
+	font-size:1.2em;
+	color:#000033;
+	background-color:#FFFFFF;
+}
